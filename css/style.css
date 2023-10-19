@@ -86,19 +86,24 @@ h3{
     text-align: center;
     justify-content: center;
     font-size: large;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    
 }
 
-#default-flex p{
-    position: absolute;
-    text-align: center;
-    bottom: 20%;
-    left: 35%;
+.default-flex p{
+    position: relative;
     display: flex;
+    text-align: center;
+    justify-content: center;
     color: #fff;
     font-size: larger;
-    justify-content: center;
     font-weight: 600;
+    top: 50%;
+    left: 50%;
 }
+
 
 .salg{
     display: flex;
@@ -125,10 +130,11 @@ h3{
     color: thistle;
     justify-content: center;
     align-items: center;
-    font-size: medium;
+    font-size: large;
     text-align: center;
     text-decoration: none;
-    padding: 1rem;
+    width: auto;
+    padding: 0.5rem;
 }
 
 .sale{
@@ -136,6 +142,20 @@ h3{
     text-align: center;
     justify-content: center;
 }
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+    gap: 1rem;
+}
+
 
 
 /*.overskrift{

@@ -73,6 +73,21 @@ main{
     
 }
 
+div p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: red;
+    font-size: large;
+}
+
+h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+}
+
 #default-flex p{
     position: absolute;
     text-align: center;
@@ -101,11 +116,6 @@ main{
     min-width: 350px;
 }
 
-main h3{
-    font-size: large;
-}
-
-
 
 .navigering{ 
     display: flex;
@@ -123,6 +133,8 @@ main h3{
 
 .sale{
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 

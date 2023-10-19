@@ -1,45 +1,195 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: calc(1em + 1vw);
+}
+
 body{
-    background-color: #E5E5E5;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "top" "hovedomraade" "sidebar" "baan";
 }
 
 header{
-    background-color: #C8C1C1;
-    height: 100px;
-    grid-area: header;
-    font-size: small;
-    font-weight: 500;
+    display: flex;
+    background-color: #827575;
+    justify-content: center;
+    text-align: center;
+    
 }
 
+.meny{
+
+    color:black;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding: 1rempx;
+    align-items: center;
+    font-size: large;
+    margin: 0 auto;
+
+}
+
+.fa-user, .fa-shopping-bag, .fa-heart, .fa-magnefying-glass, .fa-bars{
+    padding: 10px;
+}
+
+#logo{
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: larger;
+    font-weight: 700;
+    padding: 50px;
+}
+
+main{
+    display: inline-block;
+    width: 100%;
+ }
+
+#default-flex img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 1200px;
+    height: 500px;
+    
+}
+
+#default-flex p{
+    position: absolute;
+    text-align: center;
+    bottom: 20%;
+    left: 35%;
+    display: flex;
+    color: #fff;
+    font-size: larger;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.salg{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    place-items: initial;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.salg img{
+    display: flex;
+    place-items: initial;
+    max-width: 250px;
+    min-width: 350px;
+}
+
+main h3{
+    font-size: large;
+}
+
+
+
+.navigering{ 
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    color: thistle;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.sale{
+    display: flex;
+}
+
+
+/*.overskrift{
+    display: flex;
+    color:black;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.meny{
+    display: flex,
+    vertical-align: baseline;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+
 header nav ul{
+    text-decoration: none;
     display: flex;
     color: #000;
     justify-content: space-between;
     list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 1 rem;
     text-transform: uppercase;
     position: relative;
+    
 }
 
 #logo{
     text-decoration: none;
 }
 
-.default-flex{
+#default-flex{
     display: flexbox;
+    width: 100%;
 }
 
-.responsive{
+#default-flex img{
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    top: 40px;
-    width: 100%;
-    list-style: none;
-    gap: 1rem;
+    gap: 40px;
+    flex-wrap: wrap;
 }
+
+
+
+#salg{
+    display: flex;
+    place-items: initial;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+    place-items: initial;
+
+}
+
+#salg img{
+    display: flex;
+    gap: 40px;
+    flex-wrap: initial;
+    width: 100%;
+    margin: 0;
+    max-width: 300px;
+    min-width: 200px;
+}
+*/

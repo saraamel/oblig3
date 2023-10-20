@@ -61,6 +61,14 @@ main{
     width: 100%;
  }
 
+.search{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    justify-content: right;
+}
+
 div p{
     display: flex;
     text-align: center;
@@ -105,6 +113,11 @@ h3{
     transform: translate(-50%, -50%);
 }
 
+.default-flex{
+    position: relative;
+    text-align: center;
+}
+
 
 .salg{
     display: flex;
@@ -133,21 +146,52 @@ h3{
 
 }
 
-.navigering{ 
+.navigering{
+    background-color: #827575;
+}
+
+.navigering ul{ 
     display: flex;
     flex-direction: row;
     gap: 30px;
     list-style: none;
     color: thistle;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: large;
     text-align: center;
     text-decoration: none;
     width: auto;
     padding: 0.5rem;
-    background-color: #827575;
 }
+
+.navigering nav{
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    justify-content: space-around;
+    place-items: initial;
+    align-items: center;
+    
+}
+
+.navigering nav{
+    justify-content: right;
+    position: absolute;
+    right: 60px;
+    width: 200px;
+    height: 120px;
+}
+
+.navigering form{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    color: thistle;
+    justify-content: right;
+}
+
 
 .responsive{
     display: flex;

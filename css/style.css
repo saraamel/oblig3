@@ -152,6 +152,7 @@ h3{
 
 .navigering{
     background-color: #827575;
+    border: 1px #000;
 }
 
 .navigering ul{ 
@@ -267,32 +268,33 @@ h2{
     left: 150px;
 }
 
-.filterboks nav{
+.filterboks{
     display: flex;
-    font-size: large;
-    padding: 1rem;
-    margin: auto;
-    list-style-position: outside;
-    position: absolute;
-    left: 150px;
-    width: 200px;
-    height: 120px;
-    width: 100%;
-    white-space: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    place-items: initial;
+    background-color: #d4cdcd;
+    
 }
 
 .filterboks ul{
     color: #000;
     text-decoration: none;
-    left: auto;
-    list-style-position: outside;
     list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    white-space: nowrap;
+    gap: 60px;
+    
 }
 
 .filterboks h3{
     display: flex;
     font-size: large;
-    color: #000;
+    color: #827575;
     padding: 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -303,49 +305,52 @@ h2{
 .katalog{
     display: flex;
     width: 100%;
-    margin: 0;
-    place-items: initial;
-    padding: 1rem;
-    justify-content: space-between;
-    float: right;
+    place-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
 }
 
-.katalogb{
-    display: flex;
-    width: 100%;
-    margin: 0;
-    place-items: initial;
-    padding: 1rem;
-    justify-content: space-between;
-    float: right;
-}
 
 .katalog img{
     display: flex;
     place-items: initial;
     max-width: 250px;
     min-width: 350px;
-    float: right;
+    justify-content: center;
+    padding: 1.1rem;
 }
 
-.katalogb img{
-    display: flex;
-    place-items: initial;
-    max-width: 250px;
-    min-width: 350px;
-    float: right;
-
-}
 
 .katalog p{
     color: #000;
-    float: right;
+    justify-content: baseline;
 }
 
-.katalogb p{
-    color: #000;
-    float: right;
+@media only screen and (min-width: 600px) {
+    #grid-template-areas: "header header header" "main main main" "footer footer footer";
+    
+    .right column{
+        display: block;
+        width: 33%;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    left column{
+        display: block;
+        padding-left: 5px;
+        text-align: center;
+        width: 33%;
+
+    }
+
+    navbar flex
 }
+
 
 /*.overskrift{
     display: flex;

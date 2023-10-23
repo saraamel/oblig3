@@ -231,24 +231,6 @@ h3{
     min-width: 250px;
     margin: 50px;
 }
-
-@media only screen and (min-width: 600px){
-    .salg img{
-        display: flex;
-        max-width: 100%;
-        min-width: auto;
-        margin: 20px;
-    }
-
-    .salg{
-        display: flex;
-        flex-direction: column;
-        justify-content: initial;
-        align-items: initial;
-    }
-
-    
-}
     
 
 .sale{

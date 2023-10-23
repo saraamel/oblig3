@@ -38,7 +38,7 @@ header{
     justify-content: center;
     gap: 50px;
     width: 100%;
-    padding: 1rempx;
+    padding: 1px;
     align-items: center;
     font-size: large;
     margin: 0 auto;
@@ -49,6 +49,11 @@ header{
     padding: 10px;
 }
 
+.fa-bag-shopping{
+    color: #000;
+
+}
+
 #logo{
     text-decoration: none;
     text-align: center;
@@ -56,6 +61,57 @@ header{
     font-size: larger;
     font-weight: 700;
     padding: 50px;
+}
+
+
+.navigering{
+    background-color: #D9D9D9;
+    border: 1px #000;
+}
+
+.navigering ul{ 
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    text-align: center;
+    width: auto;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.navigering ul a{
+    color: #000;
+    text-decoration: none;
+}
+
+.navigering nav{
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    justify-content: space-around;
+    place-items: initial;
+    align-items: center;
+    
+}
+
+.navigering nav{
+    justify-content: right;
+    position: absolute;
+    right: 60px;
+    width: 200px;
+    height: 120px;
+}
+
+.navigering form{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    color: #000;
+    justify-content: right;
 }
 
 main{
@@ -69,6 +125,34 @@ main{
     gap: 30px;
     list-style: none;
     justify-content: right;
+}
+
+@media only screen and (min-width: 600px){
+    header{
+        text-align: center;
+        display: block;
+    }
+
+    .nav{
+        display: block;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .navigering ul li{
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navigering nav form{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 /*forside*/
@@ -122,6 +206,17 @@ h3{
     text-align: center;
 }
 
+
+@media only screen and (min-width: 600px){
+    .default-flex img{
+        display: flex;
+        max-width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+    
+}
+
 .salg{
     display: flex;
     width: 100%;
@@ -136,6 +231,25 @@ h3{
     min-width: 250px;
     margin: 50px;
 }
+
+@media only screen and (min-width: 600px){
+    .salg img{
+        display: flex;
+        max-width: 100%;
+        min-width: auto;
+        margin: 20px;
+    }
+
+    .salg{
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    
+}
+    
 
 .sale{
     display: flex;
@@ -155,54 +269,11 @@ h3{
     
 }
 
-.navigering{
-    background-color: #D9D9D9;
-    border: 1px #000;
-}
-
-.navigering ul{ 
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: left;
-    align-items: center;
-    font-size: large;
-    text-align: center;
-    width: auto;
-    padding: 0.5rem;
-    list-style: none;
-}
-
-.navigering ul a{
-    color: #000;
-    text-decoration: none;
-}
-
-.navigering nav{
-    display: flex;
-    flex-direction: row;
-    color: #000;
-    justify-content: space-around;
-    place-items: initial;
-    align-items: center;
+@media only screen and (min-width: 600px){
+    .sale{
+        width: 100%;
+    }
     
-}
-
-.navigering nav{
-    justify-content: right;
-    position: absolute;
-    right: 60px;
-    width: 200px;
-    height: 120px;
-}
-
-.navigering form{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    list-style: none;
-    color: #000;
-    justify-content: right;
 }
 
 
@@ -346,30 +417,83 @@ h2{
 
 
 .katalog p{
+    display: flex;
     color: #000;
-    justify-content: baseline;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+
+
 }
 
-@media only screen and (min-width: 600px) {
-    #grid-template-areas: "header header header" "main main main" "footer footer footer";
+/* Produkt */
+
+.product h2{
+    display: flex;
+    font-size: 25px;
+    color: #827575;
+    font-weight: 400;
+    padding: 1rem;
+    margin: 0;
+    left: 150px;
+}
+
     
-    .right column{
-        display: block;
-        width: 33%;
-        text-align: center;
-        padding-right: 10px;
-    }
-
-    left column{
-        display: block;
-        padding-left: 5px;
-        text-align: center;
-        width: 33%;
-
-    }
-
-    navbar flex
+.nb{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: -10px;
 }
+
+.newbalance img{
+    display: flex;
+    justify-content: left;
+    max-width: 250px;
+    min-width: 350px;
+    margin-left: 90px;
+
+}
+
+.grid-container ul img{
+    display: flex;
+    justify-content: right;
+    max-width: 50px;
+    min-width: 100px;
+    margin-left: 80px;
+    padding: 10px;
+}
+
+.nb h3, p{
+    padding: auto;
+    width: 100%;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+}
+
+
+
+.colors img{
+    float: left;
+    display: flex;
+    width: 33%;
+    max-width: 50px;
+    min-width: 100px;
+    align-items: left;
+    justify-content: center;
+    padding: 5px;
+    margin: auto;
+}
+
+
 
 
 /*.overskrift{

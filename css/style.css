@@ -45,15 +45,6 @@ header{
 
 }
 
-.fa-user, .fa-shopping-bag, .fa-heart, .fa-magnefying-glass, .fa-bars{
-    padding: 10px;
-}
-
-.fa-bag-shopping{
-    color: #000;
-
-}
-
 #logo{
     text-decoration: none;
     text-align: center;
@@ -63,6 +54,14 @@ header{
     padding: 50px;
 }
 
+.fa-user, .fa-shopping-bag, .fa-heart, .fa-magnefying-glass, .fa-bars{
+    padding: 10px;
+}
+
+.fa-bag-shopping{
+    color: #000;
+
+}
 
 .navigering{
     background-color: #D9D9D9;
@@ -129,30 +128,6 @@ main{
     justify-content: right;
 }
 
-@media only screen and (min-width: 600px){
-    header{
-        text-align: center;
-        display: block;
-    }
-
-    .nav{
-        display: block;
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-
-    .navigering ul li{
-        display: block;
-        text-align: center;
-        overflow: hidden;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .navigering nav{
-        margin-top: 0;
-    }
-}
 
 /*forside*/
 
@@ -182,9 +157,10 @@ h3{
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
-    width: 900px;
-    height: 400px;
-}
+    width: 350px;
+    height: 150px;
+ }
+
 
 
 .default-flex p{
@@ -195,9 +171,11 @@ h3{
     font-size: larger;
     font-weight: 600;
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    ;
 }
 
 .default-flex{
@@ -206,31 +184,25 @@ h3{
 }
 
 
-@media only screen and (min-width: 600px){
-    .default-flex img{
-        display: flex;
-        max-width: 100%;
-        padding: 10px;
-        justify-content: center;
-    }
-    
-}
-
 .salg{
     display: flex;
     width: 100%;
-    place-items: initial;
-    justify-content: space-between;
+    place-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
 }
 
 .salg img{
-    display: flex;
     place-items: initial;
-    max-width: 150px;
-    min-width: 250px;
-    margin: 50px;
-}
-    
+    max-width: 250px;
+    min-width: 350px;
+    justify-content: center;
+    padding: 1.1rem;
+ }
 
 .sale{
     display: flex;
@@ -250,27 +222,6 @@ h3{
     
 }
 
-@media only screen and (min-width: 600px){
-    .sale{
-        width: 100%;
-    }
-    
-}
-
-
-.responsive{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    top: 40px;
-    width: 100%;
-    list-style: none;
-    gap: 1rem;
-}
-
 .news img{
     display: flex;
     justify-content: center;
@@ -278,8 +229,8 @@ h3{
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
-    width: 900px;
-    height: 400px;
+    width: 350px;
+    height: 150px;
 
 }
 
@@ -291,14 +242,16 @@ h3{
     font-size: larger;
     font-weight: 600;
     position: absolute;
-    top: 150px;
-    left: 300px;
+    top: 70px;
+    left: -50px;
 }
 
 .news{
     position: relative;
     text-align: center;
 }
+
+/*footer*/
 
 footer{
     background-color: #D9D9D9;
@@ -343,7 +296,7 @@ h2{
     align-items: center;
     flex-direction: row;
     display: flex;
-    gap: 60px;   
+    gap: 20px;   
     text-align: center;
     padding: 0.5rem;
     list-style: none;
@@ -419,7 +372,7 @@ h2{
     left: 150px;
 }
 
-    
+
 .nb{
     display: flex;
     flex-direction: row;
@@ -436,8 +389,8 @@ h2{
 
 }
 
-.grid-container ul img{
-    display: flex;
+.grid-container img{
+    display: none;
     justify-content: right;
     max-width: 50px;
     min-width: 100px;
@@ -445,46 +398,212 @@ h2{
     padding: 10px;
 }
 
+
 .nb h3, p{
     padding: auto;
     width: 100%;
     align-self: center;
-    flex-direction: row;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
     justify-content: space-between;
 }
 
-.description a{
+.description-filter a{
+    display: flex;
+    flex-direction: column;
     list-style: none;
     text-decoration: none;
     color: #000;
-    font-size: large;
+    font-size: 15px;
+    background-color: #827575;
+    border-radius: 0;
+    padding: 12px 110px;
+    max-width: 110px;
 }
 
-.description{
+.description-filter product-details{
+    padding: 12px 110px;
+    max-width: 110px;
+}
+
+.description-filter{
+    display: flex;
     font-size: 20px;
     float: right;
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 8px;
     align-items: center;
 }
 
-button{
-    min-width: 20px;
-    max-width: 250px;
+@media only screen and (min-width: 600px){
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "top" "hovedomraade" "sidebar" "baan";
+    }
+
+    header{
+        text-align: center;
+        display: block;
+    }
+
+    .nav{
+        display: block;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .navigering ul li{
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navigering nav{
+        margin-top: 0;
+    }
+
+    .default-flex img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        width: 900px;
+        height: 400px;
+    }
+
+    .salg img{
+        display: flex;
+        place-items: initial;
+        max-width: 150px;
+        min-width: 250px;
+        margin: 50px;
+    }
+
+    .news p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: #000;
+        font-size: larger;
+        font-weight: 600;
+        position: absolute;
+        top: 150px;
+        left: -150px;
+     }
+
+    .news img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        width: 900px;
+        height: 400px;    
+
+    .filterboks ul li{
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sale{
+        width: 100%;
+    }
+
+    .filterboks ul{
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        gap: 60px;   
+        text-align: center;
+        padding: 0.5rem;
+        list-style: none;
+        width: auto;
+        justify-content: center;
+     }
+
+    .default-flex img{
+        display: flex;
+        max-width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .grid-container img{
+        display: flex;
+        justify-content: right;
+        max-width: 50px;
+        min-width: 100px;
+        margin-left: 80px;
+        padding: 10px;
+    }
+    
+
+    .newbalance img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description, .grid-container{
+        position: right;
+    }
+
+    .newbalance section h3{
+        position: absolute;
+        left: 50%;
+        margin: auto;
+    }
+
+
+    .newbalance, .grid-container{
+        display: flex;
+        place-items: initial;
+        justify-content: center;
+        padding: 1.1rem;
+    }
+
+    .x-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .x{
+        padding: 10px 10px;
+        background-color: rebeccapurple;
+        color: #000;
+    }
+
+    .description{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: left;
+        left: -40px;
+    }
+
+
+}
 }
 
-.colors img{
-    float: left;
-    display: flex;
-    width: 33%;
-    max-width: 50px;
-    min-width: 100px;
-    align-items: left;
-    justify-content: center;
-    padding: 5px;
-    margin: auto;
-}
+
+
+
+
+
 
 
 

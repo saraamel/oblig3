@@ -206,7 +206,7 @@ h3{
  }
 
  .salg p{
-    color: rgb(196, 2, 2);
+    color: rgb(0, 0, 0);
  }
 
 .sale{
@@ -319,7 +319,7 @@ h2{
 .filterboks h3{
     display: flex;
     font-size: large;
-    color: #827575;
+    color: #000000;
     overflow: hidden;
     justify-content: center;
 

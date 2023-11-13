@@ -167,7 +167,8 @@ h3{
     display: flex;
     text-align: center;
     justify-content: center;
-    color: #fff;
+    color: #ffffff;
+    border: #000;
     font-size: larger;
     font-weight: 600;
     position: absolute;
@@ -202,6 +203,10 @@ h3{
     min-width: 350px;
     justify-content: center;
     padding: 1.1rem;
+ }
+
+ .salg p{
+    color: rgb(196, 2, 2);
  }
 
 .sale{

@@ -16,27 +16,6 @@
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
-
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Product",
-              "name": "New Balance - 530 UNISEX - joggesko",
-              "image": "img/Produkt/49683a2ee5c743559302651c04b0e63a produkt.webp",
-              "description": "Behagelige joggesko i grønn og blå farge med gule detaljer.",
-              "brand": {
-                "@type": "New Blance - UNISEX joggesko",
-                "name": "New Balance"
-              },
-              "offers": {
-                "@type": "Offer",
-                "price": "1195.00",
-                "priceCurrency": "NOK",
-                "availability": "https://schema.org/InStock"
-              }
-            }
-        </script>
-
         <title>Solemate</title>
     </head>
     <body>
@@ -52,6 +31,17 @@
             </nav>
          </header> 
             <main>
+                <section itemscope itemtype="http://schema.org/Product">
+                    <h1 itemprop="name">New Balance - 530 UNISEX - joggesko</h1>
+                    <img itemprop="image" src="img/Produkt/49683a2ee5c743559302651c04b0e63a produkt.webp" alt="Bildekategori for utvalgt sko">
+                    <p itemprop="description">Hverdagslige kule og behagelige joggesko i grønn og blå med gule detaljer.</p>
+                    <meta itemprop="brand" content="New Balance">
+                    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="1195.00">
+                        <meta itemprop="priceCurrency" content="NOK">
+                        <link itemprop="availability" href="https://schema.org/InStock">
+                    </span>
+                </section>
                 <section class="navigering">
                     <ul>
                         <li><a href="#" title="Utforsk herresko">Explore men's shoes</a></li>
